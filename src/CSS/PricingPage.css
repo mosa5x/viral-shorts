@@ -1,0 +1,247 @@
+/* PricingPage.css */
+
+.pricing-container {
+    background: linear-gradient(to bottom right, #111827, #1f2937);
+    color: white;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .pricing-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pricing-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .pricing-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-title-highlight {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .pricing-subtitle {
+    font-size: 1.125rem;
+    color: #d1d5db;
+    max-width: 36rem;
+    margin: 0 auto;
+  }
+  
+  .billing-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+  }
+  
+  .billing-toggle {
+    background-color: #1f2937;
+    padding: 0.375rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .billing-option {
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    border: none;
+    background: none;
+    color: #9ca3af;
+    cursor: pointer;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .billing-option.active {
+    background-color: #374151;
+    color: white;
+  }
+  
+  .savings-badge {
+    background: linear-gradient(to right, #10b981, #059669);
+    color: black;
+    font-size: 0.75rem;
+    padding: 0.125rem 0.5rem;
+    border-radius: 9999px;
+    font-weight: 500;
+  }
+  
+  /* Row layout for pricing cards */
+  .pricing-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pricing-card {
+    position: relative;
+    border-radius: 1rem;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    border: 1px solid transparent;
+    background-color: rgba(31, 41, 55, 0.5);
+    overflow: hidden;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .pricing-card.popular {
+    background: linear-gradient(to bottom, #1f2937, #111827);
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 0 10px 25px -5px rgba(139, 92, 246, 0.2);
+  }
+  
+  .pricing-card-content {
+    padding: 2rem;
+  }
+  
+  .popular-badge {
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .popular-badge div {
+    background: linear-gradient(to right, #8b5cf6, #6d28d9);
+    padding: 0.25rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .plan-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .price-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 1.5rem;
+  }
+  
+  .original-price {
+    color: #9ca3af;
+    text-decoration: line-through;
+    font-size: 1.125rem;
+  }
+  
+  .current-price {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+  }
+  
+  .price-period {
+    color: #9ca3af;
+    margin-left: 0.25rem;
+  }
+  
+  .billing-info {
+    color: #9ca3af;
+    font-size: 0.875rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .enterprise-price {
+    margin-bottom: 2rem;
+  }
+  
+  .custom-pricing {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, #ec4899, #d946ef);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .enterprise-subtitle {
+    color: #9ca3af;
+    font-size: 0.875rem;
+  }
+  
+  .plan-button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: none;
+    background-color: #374151;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .plan-button:hover {
+    background-color: #4b5563;
+  }
+  
+  .plan-button.popular {
+    background: linear-gradient(to right, #8b5cf6, #6d28d9);
+  }
+  
+  .plan-button.popular:hover {
+    background: linear-gradient(to right, #7c3aed, #5b21b6);
+  }
+  
+  .plan-button.enterprise {
+    background: linear-gradient(to right, #ec4899, #d946ef);
+  }
+  
+  .plan-button.enterprise:hover {
+    background: linear-gradient(to right, #db2777, #c026d3);
+  }
+  
+  .credits-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    color: #d1d5db;
+  }
+  
+  .credits-icon {
+    color: #fbbf24;
+  }
+  
+  .features-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }

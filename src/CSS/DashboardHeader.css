@@ -1,0 +1,116 @@
+/* DashboardHeader.css */
+
+.dashboard-header {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .dashboard-header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dashboard-header-controls {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  /* Notification Bell */
+  .notification-bell {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .bell-icon {
+    height: 24px;
+    width: 24px;
+  }
+  
+  .notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 9999px;
+    height: 16px;
+    width: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Credits Counter */
+  .credits-counter {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 500;
+  }
+  
+  .credits-icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+  /* Add Credits Button */
+  .add-credits-button {
+    background-color: #1f2937;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-credits-button:hover {
+    background-color: #374151;
+  }
+  
+  /* Upgrade Banner */
+  .upgrade-banner {
+    width: 100%;
+    background-color: #111827;
+    border-top: 1px solid #1f2937;
+    padding: 12px 0;
+  }
+  
+  .upgrade-banner-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .upgrade-message {
+    color: white;
+  }
+  
+  .upgrade-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #eab308;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .upgrade-button:hover {
+    color: #facc15;
+  }
+  
+  .upgrade-icon {
+    height: 20px;
+    width: 20px;
+  }
